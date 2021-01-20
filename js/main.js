@@ -2535,15 +2535,16 @@ var map = L.map('map').setView([37.8, -96], 4);
 //set osm variable
 var backgroundLayerOSM = new L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
-});
-
-//set mab box basemap variable
-var backgroundLayerMB = new L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoibWFycmVndWluIiwiYSI6ImNrNmUxcXJoczA0MGMza29ka3h3YzA4cTEifQ.K2Bndke1xHevJPJ4nRu0Eg'
 }).addTo(map);
+
+//need to fix this
+//set mab box basemap variable
+//var backgroundLayerMB = new L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+//    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+//    maxZoom: 18,
+//    id: 'mapbox.streets',
+//    accessToken: 'pk.eyJ1IjoibWFycmVndWluIiwiYSI6ImNrNmUxcXJoczA0MGMza29ka3h3YzA4cTEifQ.K2Bndke1xHevJPJ4nRu0Eg'
+//}).addTo(map);
 
 
 //read in geojson as var geojson, add style geojson, and add to map   
@@ -2680,9 +2681,8 @@ legend.addTo(map);
 
 //add base map toggle
 var baseLayers = {
-    "MapBox Streets": backgroundLayerMB,
-    "Open Street Map": backgroundLayerOSM
-    
+    "Open Street Map": backgroundLayerOSM,
+    "MapBox Streets": backgroundLayerMB
 };
 //add prescription rate layer to toggle menu
 /*var overlayPoints = {
