@@ -2541,8 +2541,8 @@ var backgroundLayerOSM = new L.tileLayer('https://cartodb-basemaps-{s}.global.ss
 var backgroundLayerMB = new L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
-    id: 'mapbox.outdoors',
-    accessToken: 'pk.eyJ1IjoibWFycmVndWluIiwiYSI6ImNrNmU1MHlhZzEyaXYza3MwNjZhZ3RudGMifQ.7Z4ngmNwEuV5GJ-wDT15nA'
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoibWFycmVndWluIiwiYSI6ImNrNmUxcXJoczA0MGMza29ka3h3YzA4cTEifQ.K2Bndke1xHevJPJ4nRu0Eg'
 }).addTo(map);
 
 
