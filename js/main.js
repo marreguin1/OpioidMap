@@ -2680,10 +2680,12 @@ legend.addTo(map);
 
 
 //add base map toggle
-var baseLayers = {
-    "Open Street Map": backgroundLayerOSM,
-    "MapBox Streets": backgroundLayerMB
-};
+//var baseLayers = {
+//    "Open Street Map": backgroundLayerOSM,
+//    "MapBox Streets": backgroundLayerMB
+//};
+
+
 //add prescription rate layer to toggle menu
 /*var overlayPoints = {
     "Prescription Rates": prescriptionLyr
